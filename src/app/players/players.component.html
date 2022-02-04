@@ -1,0 +1,7 @@
+<ul class="playersList">
+    <li class="playerItem" *ngFor="let player of players" title={{player.fullName}}>
+        <a routerLink="/stats/{{player.playerId}}">
+            <img src={{player.playerImage}} alt={{player.fullName}}/>
+          </a>
+    </li>
+</ul>
